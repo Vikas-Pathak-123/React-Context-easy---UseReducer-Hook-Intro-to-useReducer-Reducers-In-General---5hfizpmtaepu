@@ -1,15 +1,21 @@
-import React from 'react'
-import '../styles/App.css';
-import { UserProfile } from './UserProfile';
+import React, { createContext } from 'react'
+import '../App.css';
+import UserProfile from './UserProfile';
 
-
+const UserContext = createContext()
+const obj = {
+  name:"Newton",
+   age:3
+  }
 const App = () => {
+
+  
 
   return (
     <div id="main">
-      
-        <UserProfile />
-      
+      <UserContext.Provider value={obj}>
+        <UserProfile/>
+      </UserContext.Provider>
     </div>
   )
 }
