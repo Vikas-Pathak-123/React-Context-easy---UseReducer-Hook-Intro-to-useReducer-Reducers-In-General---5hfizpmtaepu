@@ -14,4 +14,4 @@ return(
 )
 }
 
-export default UserProfile
+export  {UserProfile}
