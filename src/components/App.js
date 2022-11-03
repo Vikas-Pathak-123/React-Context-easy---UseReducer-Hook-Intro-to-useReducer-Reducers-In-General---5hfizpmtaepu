@@ -1,6 +1,6 @@
 import React, { createContext } from 'react'
 import '../App.css';
-import UserProfile from './UserProfile';
+import {UserProfile} from './UserProfile';
 
 const UserContext = createContext()
 const obj = {
